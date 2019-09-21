@@ -1,12 +1,15 @@
 import React from 'react'
 // import PropTypes from 'prop-types'
 import styled, { keyframes } from 'styled-components'
+import MainContainer from '../containers/mainContainer'
 
 const Breathe = () => {
 	return (
-		<Container>
+		<MainContainer>
+			<h1>Breathing exercise</h1>
 			<Circle />
-		</Container>
+			<Footer>footer</Footer>
+		</MainContainer>
 	)
 }
 
@@ -31,9 +34,7 @@ const Circle = styled.div`
 	animation-iteration-count: infinite;
 `
 
-const Container = styled.div`
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 450px;
+const Footer = styled.h2`
+	position: fixed;
+	bottom: 0;
 `
