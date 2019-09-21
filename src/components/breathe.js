@@ -6,7 +6,7 @@ import MainContainer from '../containers/mainContainer'
 const Breathe = () => {
 	return (
 		<MainContainer>
-			<h1>Breathing exercise</h1>
+			{/*<h1>Breathing exercise</h1>*/}
 			<Circle />
 			<Footer>footer</Footer>
 		</MainContainer>
@@ -20,6 +20,12 @@ const breatheAnimation = keyframes`
 	30% { height: 400px; width: 400px; opacity: 1 }
 	40% { height: 405px; width: 405px; opacity: 0.3; }
 	100% { height: 100px; width: 100px; opacity: 0.6; }
+`
+
+const fadeIn = keyframes`
+	0% { opacity: 0; }
+	90% { opacity: 0; }
+	100% { opacity: 1; }
 `
 
 const Circle = styled.div`
@@ -37,4 +43,7 @@ const Circle = styled.div`
 const Footer = styled.h2`
 	position: fixed;
 	bottom: 0;
+	animation-name: ${fadeIn};
+	animation-duration: 15s;
+	animation-duration-count: 1;
 `
