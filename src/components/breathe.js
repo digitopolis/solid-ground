@@ -8,7 +8,7 @@ const Breathe = () => {
 		<MainContainer>
 			{/*<h1>Breathing exercise</h1>*/}
 			<Circle />
-			<Footer>footer</Footer>
+			<Footer>Try match your breath to the circle. Click anywhere to continue.</Footer>
 		</MainContainer>
 	)
 }
