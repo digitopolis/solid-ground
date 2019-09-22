@@ -1,5 +1,6 @@
 import React from 'react';
 // import './App.css';
+import Hear from './components/hear'
 import Touch from './components/touch'
 import See from './components/see'
 import Breathe from './components/breathe'
@@ -12,7 +13,7 @@ class App extends React.Component {
 	}
 
 	cycleContent = () => {
-		if (this.state.number < 4) {
+		if (this.state.number < 5) {
 			const number = this.state.number + 1
 			this.setState({ number })
 		} else {
@@ -30,6 +31,8 @@ class App extends React.Component {
 				return <See />
 			case 3:
 				return <Touch />
+			case 4:
+				return <Hear />
 			default:
 				return <h1>the end</h1>
 		}
