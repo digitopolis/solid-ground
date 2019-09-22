@@ -1,5 +1,7 @@
 import React from 'react';
 // import './App.css';
+// import Taste from './components/taste'
+import Smell from './components/smell'
 import Hear from './components/hear'
 import Touch from './components/touch'
 import See from './components/see'
@@ -13,7 +15,7 @@ class App extends React.Component {
 	}
 
 	cycleContent = () => {
-		if (this.state.number < 5) {
+		if (this.state.number < 8) {
 			const number = this.state.number + 1
 			this.setState({ number })
 		} else {
@@ -33,6 +35,8 @@ class App extends React.Component {
 				return <Touch />
 			case 4:
 				return <Hear />
+			case 5:
+				return <Smell />
 			default:
 				return <h1>the end</h1>
 		}
