@@ -18,3 +18,21 @@ div.main {
 	align-items: center;
 	flex-direction: column;
 }
+
+.content {
+	animation-duration: 0.75s;
+	animation-name: slideIn;
+}
+
+@keyframes slideIn {
+	from {
+		margin-left: 1%;
+    width: 100%;
+    opacity: 0;
+	}
+
+	to {
+		margin-left: 0%;
+    width: 100%;
+	}
+}
