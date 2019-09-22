@@ -1,6 +1,6 @@
 import React from 'react';
 // import './App.css';
-// import Taste from './components/taste'
+import Taste from './components/taste'
 import Smell from './components/smell'
 import Hear from './components/hear'
 import Touch from './components/touch'
@@ -37,6 +37,8 @@ class App extends React.Component {
 				return <Hear />
 			case 5:
 				return <Smell />
+			case 6:
+				return <Taste />
 			default:
 				return <h1>the end</h1>
 		}
