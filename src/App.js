@@ -1,11 +1,10 @@
 import React from 'react';
 // import './App.css';
 import DATA from './data.js'
-import Taste from './components/taste'
-import Smell from './components/smell'
-import Hear from './components/hear'
-import Touch from './components/touch'
-// import See from './components/see'
+// import Taste from './components/taste'
+// import Smell from './components/smell'
+// import Hear from './components/hear'
+// import Touch from './components/touch'
 import Senses from './components/senses'
 import Breathe from './components/breathe'
 import Intro from './components/intro'
@@ -32,20 +31,26 @@ class App extends React.Component {
 				return <Intro />
 			case 1:
 				return <Breathe />
-			// case 2:
-			// 	return <See />
 			case 2:
 				return <Senses
 					headline={this.state.headlines.see}
 					number={5}/>
 			case 3:
-				return <Touch />
+				return <Senses
+					headline={this.state.headlines.touch}
+					number={4}/>
 			case 4:
-				return <Hear />
+				return <Senses
+					headline={this.state.headlines.hear}
+					number={3}/>
 			case 5:
-				return <Smell />
+				return <Senses
+					headline={this.state.headlines.smell}
+					number={2}/>
 			case 6:
-				return <Taste />
+				return <Senses
+					headline={this.state.headlines.taste}
+					number={1}/>
 			default:
 				return <h1>the end</h1>
 		}
