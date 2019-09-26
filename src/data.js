@@ -7,3 +7,5 @@ export const DATA = {
 		taste: 'Identify ONE thing you can taste.'
 	}
 }
+
+export default DATA
