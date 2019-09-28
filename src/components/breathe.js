@@ -1,15 +1,15 @@
 import React from 'react'
 // import PropTypes from 'prop-types'
 import styled, { keyframes } from 'styled-components'
-import MainContainer from '../containers/mainContainer'
+// import MainContainer from '../containers/mainContainer'
 
-const Breathe = () => {
+const Breathe = (props) => {
 	return (
-		<MainContainer>
+		<div className='container' onClick={props.advance}>
 			{/*<h1>Breathing exercise</h1>*/}
 			<Circle />
 			<Footer>Try match your breath to the circle. Click anywhere to continue.</Footer>
-		</MainContainer>
+		</div>
 	)
 }
 

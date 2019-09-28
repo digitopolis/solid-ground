@@ -28,28 +28,33 @@ class App extends React.Component {
 	renderContent = () => {
 		switch (this.state.number) {
 			case 0:
-				return <Intro />
+				return <Intro advance={this.cycleContent} />
 			case 1:
-				return <Breathe />
+				return <Breathe advance={this.cycleContent} />
 			case 2:
 				return <Senses
 					headline={this.state.headlines.see}
+					advance={this.cycleContent}
 					number={5}/>
 			case 3:
 				return <Senses
 					headline={this.state.headlines.touch}
+					advance={this.cycleContent}
 					number={4}/>
 			case 4:
 				return <Senses
 					headline={this.state.headlines.hear}
+					advance={this.cycleContent}
 					number={3}/>
 			case 5:
 				return <Senses
 					headline={this.state.headlines.smell}
+					advance={this.cycleContent}
 					number={2}/>
 			case 6:
 				return <Senses
 					headline={this.state.headlines.taste}
+					advance={this.cycleContent}
 					number={1}/>
 			default:
 				return <h1>the end</h1>
@@ -58,7 +63,7 @@ class App extends React.Component {
 
 	render() {
 		return (
-			<div className='main' onClick={this.cycleContent}>
+			<div className='main' >
 				{this.renderContent()}
 			</div>
 		);
