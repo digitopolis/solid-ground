@@ -28,6 +28,14 @@ div.main {
 	flex-direction: column;
 }
 
+div.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 500px;
+}
+
 .content {
 	animation-duration: 0.75s;
 	animation-name: slideIn;
