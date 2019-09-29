@@ -16,7 +16,8 @@ class App extends React.Component {
 		headlines: DATA.headlines
 	}
 
-	cycleContent = () => {
+	cycleContent = (event) => {
+		event.preventDefault()
 		if (this.state.number < 8) {
 			const number = this.state.number + 1
 			this.setState({ number })
