@@ -61,7 +61,7 @@ class App extends React.Component {
 			case 6:
 				return <Senses
 					headline={this.state.headlines.taste}
-					advance={this.cycleContent}
+					advance={this.startOver}
 					number={1}/>
 			default:
 				return <h1>the end</h1>
