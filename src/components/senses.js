@@ -14,7 +14,7 @@ const Senses = (props) => {
 				{inputArray.map(input => {
 					return input
 				})}
-				{props.number === 1 ? <Button>Start Over</Button> : <Button onClick={props.advance}>Continue</Button>}
+				<Button onClick={props.advance}>{props.number === 1 ? 'Start Over' : 'Continue' }</Button>
 			</form>
 		</MainContainer>
 	)
