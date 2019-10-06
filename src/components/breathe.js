@@ -1,7 +1,6 @@
 import React from 'react'
 // import PropTypes from 'prop-types'
 import styled, { keyframes } from 'styled-components'
-// import MainContainer from '../containers/mainContainer'
 
 const Breathe = (props) => {
 	return (
