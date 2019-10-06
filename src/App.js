@@ -26,6 +26,12 @@ class App extends React.Component {
 		}
 	}
 
+	startOver = (event) => {
+		event.preventDefault()
+		const number = 1
+		this.setState({ number })
+	}
+
 	renderContent = () => {
 		switch (this.state.number) {
 			case 0:
