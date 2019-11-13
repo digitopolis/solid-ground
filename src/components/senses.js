@@ -2,19 +2,19 @@ import React from 'react'
 import MainContainer from '../containers/mainContainer'
 import styled from 'styled-components'
 
-const Senses = (props) => {
+const Senses = ({ number, step, headline, advance }) => {
 	const inputArray = []
-	for (var i = 0; i < props.number; i++) {
-		inputArray.push(<><input key={props.step + i} defaultValue='' /><br/></>)
+	for (var i = 0; i < number; i++) {
+		inputArray.push(<><input key={step + i} defaultValue='' /><br/></>)
 	}
 	return (
 		<MainContainer>
-			<h1>{props.headline}</h1>
+			<h1>{headline}</h1>
 			<form>
 				{inputArray.map(input => {
 					return input
 				})}
-				<Button onClick={props.advance}>{props.number === 1 ? 'Start Over' : 'Continue' }</Button>
+				<Button onClick={advance}>{number === 1 ? 'Start Over' : 'Continue' }</Button>
 			</form>
 		</MainContainer>
 	)
