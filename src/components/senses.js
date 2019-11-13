@@ -5,7 +5,7 @@ import styled from 'styled-components'
 const Senses = (props) => {
 	const inputArray = []
 	for (var i = 0; i < props.number; i++) {
-		inputArray.push(<><input key={i}/><br/></>)
+		inputArray.push(<><input key={props.step + i} defaultValue='' /><br/></>)
 	}
 	return (
 		<MainContainer>
