@@ -30,7 +30,7 @@ class App extends React.Component {
 
 	startOver = (event) => {
 		event.preventDefault()
-		const number = 1
+		const number = 2
 		this.setState({ number })
 	}
 
@@ -73,7 +73,9 @@ class App extends React.Component {
 					advance={this.finishExercise}
 					number={1}/>
 			case 7:
-				return <Breathe advance={this.cycleContent} />
+				return <Breathe
+					advance={this.startOver}
+					prompt={'Maintain focus on your breath for a few moments. Click anywhere to start over.'}/>
 			default:
 				return <h1>the end</h1>
 		}
