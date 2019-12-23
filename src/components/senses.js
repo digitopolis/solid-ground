@@ -14,7 +14,7 @@ const Senses = ({ number, step, headline, advance }) => {
 				{inputArray.map(input => {
 					return input
 				})}
-				<Button onClick={advance}>{number === 1 ? 'Start Over' : 'Continue' }</Button>
+				<Button onClick={advance}>{number === 1 ? 'Finish' : 'Continue' }</Button>
 			</form>
 		</MainContainer>
 	)

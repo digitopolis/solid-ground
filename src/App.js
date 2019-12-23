@@ -22,6 +22,12 @@ class App extends React.Component {
 		}
 	}
 
+	finishExercise = (event) => {
+		event.preventDefault()
+		const number = 7
+		this.setState({ number })
+	}
+
 	startOver = (event) => {
 		event.preventDefault()
 		const number = 1
@@ -62,8 +68,10 @@ class App extends React.Component {
 				return <Senses
 					headline={this.state.headlines.taste}
 					step={'taste'}
-					advance={this.startOver}
+					advance={this.finishExercise}
 					number={1}/>
+			case 7:
+				return <Breathe advance={this.cycleContent} />
 			default:
 				return <h1>the end</h1>
 		}
