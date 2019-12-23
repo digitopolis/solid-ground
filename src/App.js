@@ -1,10 +1,6 @@
 import React from 'react';
 // import './App.css';
 import DATA from './data.js'
-// import Taste from './components/taste'
-// import Smell from './components/smell'
-// import Hear from './components/hear'
-// import Touch from './components/touch'
 import Senses from './components/senses'
 import Breathe from './components/breathe'
 import Intro from './components/intro'
