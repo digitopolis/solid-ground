@@ -39,7 +39,9 @@ class App extends React.Component {
 			case 0:
 				return <Intro advance={this.cycleContent} />
 			case 1:
-				return <Breathe advance={this.cycleContent} />
+				return <Breathe
+					advance={this.cycleContent}
+					prompt={'Try to match your breath to the circle. Click anywhere to continue.'} />
 			case 2:
 				return <Senses
 					headline={this.state.headlines.see}

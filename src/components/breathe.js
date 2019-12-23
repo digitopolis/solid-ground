@@ -2,12 +2,11 @@ import React from 'react'
 // import PropTypes from 'prop-types'
 import styled, { keyframes } from 'styled-components'
 
-const Breathe = (props) => {
+const Breathe = ({ advance, prompt }) => {
 	return (
-		<div className='container' onClick={props.advance}>
-			{/*<h1>Breathing exercise</h1>*/}
+		<div className='container' onClick={advance}>
 			<Circle />
-			<Footer>Try match your breath to the circle. Click anywhere to continue.</Footer>
+			<Footer>{prompt}</Footer>
 		</div>
 	)
 }
