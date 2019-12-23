@@ -47,31 +47,31 @@ class App extends React.Component {
 					headline={this.state.headlines.see}
 					step={'see'}
 					advance={this.cycleContent}
-					number={5}/>
+					inputs={5}/>
 			case 3:
 				return <Senses
 					headline={this.state.headlines.touch}
 					step={'touch'}
 					advance={this.cycleContent}
-					number={4}/>
+					inputs={4}/>
 			case 4:
 				return <Senses
 					headline={this.state.headlines.hear}
 					step={'hear'}
 					advance={this.cycleContent}
-					number={3}/>
+					inputs={3}/>
 			case 5:
 				return <Senses
 					headline={this.state.headlines.smell}
 					step={'smell'}
 					advance={this.cycleContent}
-					number={2}/>
+					inputs={2}/>
 			case 6:
 				return <Senses
 					headline={this.state.headlines.taste}
 					step={'taste'}
 					advance={this.finishExercise}
-					number={1}/>
+					inputs={1}/>
 			case 7:
 				return <Breathe
 					advance={this.startOver}

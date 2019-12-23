@@ -2,9 +2,9 @@ import React from 'react'
 import MainContainer from '../containers/mainContainer'
 import styled from 'styled-components'
 
-const Senses = ({ number, step, headline, advance }) => {
+const Senses = ({ inputs, step, headline, advance }) => {
 	const inputArray = []
-	for (var i = 0; i < number; i++) {
+	for (var i = 0; i < inputs; i++) {
 		inputArray.push(<><input key={step + i} defaultValue='' /><br/></>)
 	}
 	return (
@@ -14,7 +14,7 @@ const Senses = ({ number, step, headline, advance }) => {
 				{inputArray.map(input => {
 					return input
 				})}
-				<Button onClick={advance}>{number === 1 ? 'Finish' : 'Continue' }</Button>
+				<Button onClick={advance}>{inputs === 1 ? 'Finish' : 'Continue' }</Button>
 			</form>
 		</MainContainer>
 	)
